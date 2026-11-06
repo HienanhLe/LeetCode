@@ -4,9 +4,15 @@
 struct ListNode {
     int val;
     ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
+    
+    // Khởi tạo nút mặc định có giá trị val = 0 và con trỏ next = nullptr.
+    ListNode() : val(0), next(nullptr) {} 
+    
+    // Khởi tạo nút với giá trị val = x truyền vào và con trỏ next = nullptr.
+    ListNode(int x) : val(x), next(nullptr) {} 
+    
+    // Khởi tạo nút với giá trị val = x và gán thẳng con trỏ next trỏ đến địa chỉ của một nút khác đã có sẵn.
+    ListNode(int x, ListNode *next) : val(x), next(next) {} 
 };
 
 class SolutionRecursive {
