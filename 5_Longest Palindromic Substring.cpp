@@ -5,10 +5,6 @@
 
 using namespace std;
 
-// =========================================================================
-// CÁCH 1: VÉT CẠN (BRUTE FORCE)
-// Độ phức tạp thời gian: O(n^3) | Không gian: O(1)
-// =========================================================================
 class SolutionBruteForce {
 public:
     string longestPalindrome(string s) {
@@ -39,11 +35,9 @@ public:
         return res;
     }
 };
+// - Time Complexity: O(n^3)
+// - Space Complexity: O(1)
 
-// =========================================================================
-// CÁCH 2: QUY HOẠCH ĐỘNG (DYNAMIC PROGRAMMING)
-// Độ phức tạp thời gian: O(n^2) | Không gian: O(n^2)
-// =========================================================================
 class SolutionDP {
 public:
     string longestPalindrome(string s) {
@@ -74,10 +68,9 @@ public:
     }
 };
 
-// =========================================================================
-// CÁCH 3: MỞ RỘNG TỪ TÂM (EXPAND AROUND CENTER)
-// Độ phức tạp thời gian: O(n^2) | Không gian: O(1)
-// =========================================================================
+// - Time Complexity: O(n^2)
+// - Space Complexity: O(n^2)
+
 class SolutionExpandCenter {
 public:
     string longestPalindrome(string s) {
@@ -113,10 +106,9 @@ public:
     }
 };
 
-// =========================================================================
-// CÁCH 4: THUẬT TOÁN MANACHER (MANACHER'S ALGORITHM)
-// Độ phức tạp thời gian: O(n) | Không gian: O(n)
-// =========================================================================
+// - Time Complexity: O(n^2)
+// - Space Complexity: O(1)
+
 class SolutionManacher {
 public:
     // Hàm tiền xử lý và tính mảng bán kính đối xứng p
@@ -175,9 +167,9 @@ public:
     }
 };
 
-// =========================================================================
-// HÀM MAIN ĐỂ KIỂM THỬ CẢ 4 THUẬT TOÁN
-// =========================================================================
+// - Time Complexity: O(n)
+// - Space Complexity: O(n)
+
 int main() {
     // Khởi tạo các bộ test case
     vector<string> testCases = {
