@@ -4,11 +4,6 @@
 
 using namespace std;
 
-// ============================================================================
-// CÁCH 1: TÍNH TOÁN CHỈ SỐ TRỰC TIẾP (TOÁN HỌC / QUY LUẬT BƯỚC NHẢY)
-// Độ phức tạp thời gian: O(N) - Duyệt qua đúng N ký tự.
-// Độ phức tạp không gian: O(1) - Không tốn bộ nhớ phụ (ngoài chuỗi kết quả).
-// ============================================================================
 class SolutionMath {
 public:
     string convert(string s, int numRows) {
@@ -43,11 +38,9 @@ public:
     }
 };
 
-// ============================================================================
-// CÁCH 2: MÔ PHỎNG ĐƯỜNG ĐI ZIGZAG (SỬ DỤNG MẢNG CHUỖI CHO TỪNG HÀNG)
-// Độ phức tạp thời gian: O(N) - Duyệt chuỗi s một lần.
-// Độ phức tạp không gian: O(N) - Lưu trữ các ký tự vào vector các hàng.
-// ============================================================================
+// - Time Complexity: O(n) - Duyệt qua đúng n ký tự.
+// - Space Complexity: O(1) - Không tốn bộ nhớ phụ (ngoài chuỗi kết quả).
+
 class SolutionSimulation {
 public:
     string convert(string s, int numRows) {
@@ -84,9 +77,9 @@ public:
     }
 };
 
-// ============================================================================
-// HÀM MAIN ĐỂ CHẠY THỬ NGHIỆM
-// ============================================================================
+// - Time Complexity: O(n) - Duyệt chuỗi s một lần.
+// - Space Complexity: O(n) - Lưu trữ các ký tự vào vector các hàng.
+
 int main() {
     string s = "PAYPALISHIRING";
     int numRows = 3;
